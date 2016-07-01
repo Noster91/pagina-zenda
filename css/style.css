@@ -1,0 +1,13 @@
+li {
+	list-style: none;
+}
+
+li img {
+
+}
+
+
+/*** IDs ***/
+#logo {
+	float: left;
+}
