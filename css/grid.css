@@ -5,12 +5,15 @@
 	border: 1px solid red;
 }
 .container {
-	margin: 0 auto;
+	margin: auto;
 	max-width: 1200px;
+	overflow: hidden;
+	position: relative;
 }
 
 [class*="col-"] {
 	float: left;
+	position: relative;
 }
 
 .col-1 { width: 8.333333%; }

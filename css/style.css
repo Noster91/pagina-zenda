@@ -1,13 +1,99 @@
-li {
-	list-style: none;
-}
-
-li img {
-
+ul,ol{
+    list-style:none; /*elimina la viñeta*/
+    padding:0;
+    margin: 0;
 }
 
 
 /*** IDs ***/
 #logo {
 	float: left;
+}
+
+
+
+
+/******************************/
+/********  EQUIPO  ***********/
+
+#equipo {
+	background-color: #664B4B;
+
+
+}
+#equipo img {
+	box-shadow: 1px 1px 5px #852826;
+	width: 60%;
+	height: 60%;
+}
+#equipo h2 {
+	text-align: center;
+}
+#equipo article {
+	background-color: #D6B2B2;
+	padding: 15px;
+	text-align: center;
+}
+#equipo i {
+	color: #4E4545 !important;
+}
+
+/******************************/
+/********  CLIENTES  *********/
+
+#clientes {
+	background-color: #E2A3A3;
+}
+
+#clientes h2 {
+	text-align: center;
+}
+
+/******************************/
+/*******  CONTACTANOS  *******/
+
+#contacto {
+	background-color: #D6B2B2;
+}
+
+#contacto h2, #contacto p {
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+#contacto input, #contacto textarea, #contacto button {
+	margin: 10px 0;
+	padding: 5px;
+}
+
+#contacto button {
+	background-color: #979393;
+	border-radius: 6px;
+}
+#contacto button:hover {
+	background-color: #E0D9D9;
+}
+
+#contacto i {
+	border-radius: 50%;
+	background-color: #FFFFFF;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	padding: 11px;
+}
+#contacto .fa {
+	font-size: 25px !important;
+}
+
+
+/******************************/
+/**********  FOOTER  *********/
+
+#footer {
+	background-color: #E2A3A3;
+}
+#footer li {
+	text-transform: uppercase;
 }
