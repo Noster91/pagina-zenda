@@ -1,7 +1,18 @@
-ul,ol{
+ul,ol {
     list-style:none; /*elimina la viñeta*/
     padding:0;
     margin: 0;
+    overflow: hidden;
+}
+
+h2 {
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+h3 {
+	text-align: center;
+
 }
 
 
@@ -10,7 +21,67 @@ ul,ol{
 	float: left;
 }
 
+.fixed {
+	position: fixed;
+	top:0;
+	left:0;
+	width: 100%;
+	z-index: 1;
 
+}
+
+/******************************/
+/********  CARROUSEL  ***********/
+#menu {
+	background-color: #fff;
+	height: 60px;
+	box-shadow: 0 4px 2px -2px gray;
+}
+#menu nav {
+	height: 60px;
+}
+#menu ul {
+	margin: auto;
+	padding-top: 20px;
+}
+
+#menu li {
+	text-align: center;
+}
+#menu a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #000;
+	font-weight: bold;
+
+}
+
+
+/******************************/
+/********  CARROUSEL  ********/
+#carrousel {
+	margin-top: 60px;
+
+}
+
+
+/*class for the carrousel script */
+#owl-demo .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+/******************************/
+/********  SERVICIOS  ********/
+#servicios {
+	background-color: #E2A3A3;
+	padding-top: 60px;	
+}
+#servicios li {
+	margin:0;
+	height: 250px;
+	padding: 15px;
+}
 
 
 /******************************/
@@ -18,17 +89,14 @@ ul,ol{
 
 #equipo {
 	background-color: #664B4B;
-
-
+	padding-top: 60px;	
 }
 #equipo img {
 	box-shadow: 1px 1px 5px #852826;
 	width: 60%;
 	height: 60%;
 }
-#equipo h2 {
-	text-align: center;
-}
+
 #equipo article {
 	background-color: #D6B2B2;
 	padding: 15px;
@@ -43,10 +111,19 @@ ul,ol{
 
 #clientes {
 	background-color: #E2A3A3;
+	padding-top: 60px;
 }
 
-#clientes h2 {
-	text-align: center;
+
+/*class for the carrousel script */
+#owl-demo2 .item{
+  	margin: 3px;
+}
+#owl-demo2 .item img{
+  	display: block;
+  	width: 100%;
+  	height: auto;
+
 }
 
 /******************************/
@@ -54,9 +131,10 @@ ul,ol{
 
 #contacto {
 	background-color: #D6B2B2;
+	padding-top: 60px;	
 }
 
-#contacto h2, #contacto p {
+#contacto p {
 	text-align: center;
 	text-transform: uppercase;
 	font-weight: bold;
