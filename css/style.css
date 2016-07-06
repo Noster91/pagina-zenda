@@ -1,8 +1,10 @@
+
+
+
 ul,ol {
     list-style:none; /*elimina la viñeta*/
     padding:0;
     margin: 0;
-    overflow: hidden;
 }
 
 h2 {
@@ -15,11 +17,20 @@ h3 {
 
 }
 
+figure{
+	margin:0;
+	padding:0;
+	height:60px;
+}
+
 
 /*** IDs ***/
 #logo {
 	float: left;
+
 }
+
+
 
 .fixed {
 	position: fixed;
@@ -39,9 +50,13 @@ h3 {
 }
 #menu nav {
 	height: 60px;
+	float:left;
+	width:80%;
 }
 #menu ul {
+	float:left;
 	margin: auto;
+	width:100%;
 }
 
 #menu li {
@@ -84,7 +99,8 @@ h3 {
 /********  SERVICIOS  ********/
 #servicios {
 	background-color: #E2A3A3;
-	padding-top: 60px;	
+	padding-top: 60px;
+	color:black;	
 }
 #servicios li {
 	margin:0;
