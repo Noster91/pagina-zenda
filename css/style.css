@@ -14,6 +14,8 @@ h2 {
 }
 h3 {
 	text-align: center;
+	color: #21a06c;
+	text-transform: uppercase;
 
 }
 
@@ -28,6 +30,9 @@ figure{
 #logo {
 	float: left;
 
+}
+#logo img {
+	height: 80px;
 }
 
 
@@ -45,11 +50,11 @@ figure{
 /********  CARROUSEL  ***********/
 #menu {
 	background-color: #fff;
-	height: 60px;
+	height: 80px;
 	box-shadow: 0 4px 2px -2px gray;
 }
 #menu nav {
-	height: 60px;
+	height: 80px;
 	float:left;
 	width:80%;
 }
@@ -68,16 +73,16 @@ figure{
 	color: #000;
 	font-weight: bold;
 	display: inline-block;
-	height: 60px;
+	height: 80px;
 	margin: auto;
 	width: 100%;
-	padding-top: 20px;
+	padding-top: 30px;
 	transition: all 0.3s ease;
 }
 
 #menu a:hover {
 	background: lightgrey;
-	
+
 }
 
 
@@ -100,7 +105,7 @@ figure{
 #servicios {
 	background-color: #E2A3A3;
 	padding-top: 60px;
-	color:black;	
+	color:black;
 }
 #servicios li {
 	margin:0;
@@ -114,7 +119,7 @@ figure{
 
 #equipo {
 	background-color: #664B4B;
-	padding-top: 60px;	
+	padding-top: 60px;
 }
 #equipo img {
 	box-shadow: 1px 1px 5px #852826;
@@ -156,7 +161,7 @@ figure{
 
 #contacto {
 	background-color: #D6B2B2;
-	padding-top: 60px;	
+	padding-top: 60px;
 }
 
 #contacto p {
@@ -168,6 +173,7 @@ figure{
 #contacto input, #contacto textarea, #contacto button {
 	margin: 10px 0;
 	padding: 5px;
+	background: #21a06c;
 }
 
 #contacto button {
