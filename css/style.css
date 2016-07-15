@@ -28,7 +28,9 @@ figure{
 
 /*** IDs ***/
 #logo {
-	float: left;
+	position: absolute;
+     top: 0;
+     left: 0;
 
 }
 #logo img {
@@ -47,37 +49,45 @@ figure{
 }
 
 /******************************/
-/********  CARROUSEL  ***********/
+/********  NAV  ***********/
 #menu {
 	background-color: #fff;
 	height: 80px;
 	box-shadow: 0 4px 2px -2px gray;
 }
+
 #menu nav {
-	height: 80px;
-	float:left;
-	width:80%;
+     margin: auto;
+     text-align: right;
+     line-height: 80px;
+
+
 }
+
 #menu ul {
-	float:left;
-	margin: auto;
 	width:100%;
+
+
 }
 
 #menu li {
 	text-align: center;
+     display: inline-block;
+     height: 80px;
+     padding: 0 35px;
+
 }
 #menu a {
 	text-decoration: none;
 	text-transform: uppercase;
 	color: #000;
+     font-size: 12px;
 	font-weight: bold;
 	display: inline-block;
 	height: 80px;
-	margin: auto;
-	width: 100%;
-	padding-top: 30px;
 	transition: all 0.3s ease;
+
+
 }
 
 #menu a:hover {
@@ -85,11 +95,32 @@ figure{
 
 }
 
+/*class for the Menu script */
+.hamburger{
+     visibility: hidden;
+     background:none;
+     position:fixed;
+     top:0;
+     right:0;
+     line-height:80px;
+     padding:0px 15px 0px 15px;
+     color:#000;
+     border:0;
+     font-size:1.4em;
+     font-weight:bold;
+     cursor:pointer;
+     outline:none;
+     z-index:10000000000000;
+}
+.menu-desplegable {
+
+}
+
 
 /******************************/
 /********  CARROUSEL  ********/
 #carrousel {
-	padding-top: 60px;
+	padding-top: 80px;
 
 }
 
@@ -104,7 +135,7 @@ figure{
 /********  SERVICIOS  ********/
 #servicios {
 	background-color: #E2A3A3;
-	padding-top: 60px;
+	padding-top: 80px;
 	color:black;
 }
 #servicios li {
@@ -119,7 +150,7 @@ figure{
 
 #equipo {
 	background-color: #664B4B;
-	padding-top: 60px;
+	padding-top: 80px;
 }
 #equipo img {
 	box-shadow: 1px 1px 5px #852826;
@@ -141,7 +172,7 @@ figure{
 
 #clientes {
 	background-color: #E2A3A3;
-	padding-top: 60px;
+	padding-top: 80px;
 }
 
 
@@ -161,7 +192,7 @@ figure{
 
 #contacto {
 	background-color: #D6B2B2;
-	padding-top: 60px;
+	padding-top: 80px;
 }
 
 #contacto p {
@@ -205,4 +236,34 @@ figure{
 }
 #footer li {
 	text-transform: uppercase;
+}
+
+
+@media (max-width: 850px) {
+     .container {
+          max-width: 95%;
+     }
+     .menu-desplegable {
+          visibility: hidden;
+          padding-top:80px;
+     }
+     #menu li {
+          padding: 4px !important;
+          font-size: 10px;
+          background: #fff;
+          height: 40px;
+          line-height: 40px;
+     }
+	.hamburger {
+			visibility: visible;
+		}
+
+}
+
+@media (max-width: 480px) {
+     footer {
+          text-align: center;
+     }
+
+
 }
