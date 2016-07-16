@@ -58,23 +58,22 @@ figure{
 
 #menu nav {
      margin: auto;
-     text-align: right;
      line-height: 80px;
-
+     padding: 0 60px;
 
 }
 
 #menu ul {
-	width:100%;
 
-
+     text-align: right;
+     margin-left: 190px;
 }
 
 #menu li {
 	text-align: center;
      display: inline-block;
      height: 80px;
-     padding: 0 35px;
+     width: 100px;
 
 }
 #menu a {
@@ -83,11 +82,8 @@ figure{
 	color: #000;
      font-size: 12px;
 	font-weight: bold;
-	display: inline-block;
-	height: 80px;
+	display: block;
 	transition: all 0.3s ease;
-
-
 }
 
 #menu a:hover {
@@ -240,19 +236,24 @@ figure{
 
 
 @media (max-width: 850px) {
-     .container {
-          max-width: 95%;
-     }
+
      .menu-desplegable {
-          visibility: hidden;
-          padding-top:80px;
+          display: none ;
+
+     }
+     #menu nav {
+          padding: 0;
+     }
+     #menu ul {
+          padding-right: 20px;
+
      }
      #menu li {
-          padding: 4px !important;
-          font-size: 10px;
+          font-size: 9px;
           background: #fff;
-          height: 40px;
-          line-height: 40px;
+          width: 80px;
+          margin: 0;
+          padding: 0;
      }
 	.hamburger {
 			visibility: visible;
@@ -260,10 +261,23 @@ figure{
 
 }
 
-@media (max-width: 480px) {
+@media (max-width: 640px) {
+
      footer {
           text-align: center;
      }
+     .menu-desplegable {
+          padding-top:80px;
+     }
+     #menu ul {
+          padding-right: 0;
+          left: 0;
+          margin: 0;
 
+     }
+     #menu li {
+          height: 40px;
+          line-height: 40px;
+     }
 
 }
