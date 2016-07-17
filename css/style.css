@@ -1,5 +1,16 @@
 
-
+/*IMPORTA GOOGLE FONTS */
+@import url(https://fonts.googleapis.com/css?family='Roboto Condensed');
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+/*IMPORTA UNA HOJA DE ESTILO SACADA DE NORMALIZE */
+@import url(normalize.css);
+/* selector universal */
+*{
+	box-sizing: border-box;
+	font-family:Montserrat;
+	color:#515151;
+	/* descuenta del width y height, lo sumado en padding y border */
+}
 
 ul,ol {
     list-style:none; /*elimina la viñeta*/
@@ -47,6 +58,8 @@ figure{
 	z-index: 1;
 
 }
+
+
 
 /******************************/
 /********  NAV  ***********/
@@ -130,9 +143,19 @@ figure{
 /******************************/
 /********  SERVICIOS  ********/
 #servicios {
-	background-color: #E2A3A3;
 	padding-top: 80px;
-	color:black;
+}
+
+#servicios h2 {
+	margin-bottom: 60px;
+	border-bottom: #21a06c solid 1px;
+	
+}
+#servicios h3 {
+	width:80%;
+	float:left;
+	text-align:left;
+	padding-left:20px;
 }
 #servicios li {
 	margin:0;
@@ -140,28 +163,67 @@ figure{
 	padding: 15px;
 }
 
-
+#servicios li i {
+	color:white !important;
+	width: 50px;
+	height:50px;
+	line-height:50px;
+	background-color: #686868;
+	border-radius:50%;
+	font-size:25px;
+	float:left;
+	text-align:center;
+}
 /******************************/
 /********  EQUIPO  ***********/
 
 #equipo {
-	background-color: #664B4B;
+
 	padding-top: 80px;
 }
+
+#equipo h2{
+	margin-bottom:80px;
+}
+
 #equipo img {
-	box-shadow: 1px 1px 5px #852826;
-	width: 60%;
+	width:60%;
 	height: 60%;
+	border-radius:50%;
+	margin-right:-50px;
 }
 
 #equipo article {
-	background-color: #D6B2B2;
 	padding: 15px;
 	text-align: center;
 }
-#equipo i {
-	color: #4E4545 !important;
+
+
+#equipo h3 {
+	color:#515151;
+	text-transform:unset;
+	font-size:25px;
+	margin-bottom:-10px;
+
 }
+
+#equipo p {
+	font-size:20ps;
+}
+
+
+#equipo i {
+	color: white !important;
+	width:60px;
+	height:60px;
+	line-height:60px;
+	background-color: #21a06c;
+	border-radius:50%;
+	font-size:35px;
+
+
+}
+
 
 /******************************/
 /********  CLIENTES  *********/
