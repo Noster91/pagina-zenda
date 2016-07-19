@@ -22,7 +22,8 @@
 	<header id="menu" class="fixed">
 		<figure id="logo"><img src="./images/logo-03.png" alt=""></figure>
 		<nav class="container">
-			<button class="hamburger">&#9776;</button>
+			<button class="hamburger"><i class="fa fa-bars" aria-hidden="true"></i></button>
+
 			<ul class="menu-desplegable" >
 				<li class="col-s-12"><a href="#carrousel">Home</a></li>
 				<li class="col-s-12"><a href="#servicios">Servicios</a></li>
@@ -30,6 +31,7 @@
 				<li class="col-s-12"><a href="#clientes">Clientes</a></li>
 				<li class="col-s-12"><a href="#contacto">Contacto</a></li>
 			</ul>
+			<button class="call-only"><i class="fa fa-phone" aria-hidden="true"><a href="tel:47902587"></a></i></button>
 		</nav>
 	</header>
 	<div class="cleaner"></div>
@@ -120,30 +122,30 @@
 		<h2 class="col-12">Nuestros Clientes</h2>
 		<div id="owl-demo2">
 			<div class="item">
-				<img src="http://placehold.it/180x180?text=Logo" alt="">
+				<img src="http://placehold.it/180x180?text=Logo1" alt="">
 			</div>
 			<div class="item">
-				<img src="http://placehold.it/180x180?text=Logo" alt="">
+				<img src="http://placehold.it/180x180?text=Logo2" alt="">
 			</div>
 			<div class="item">
-				<img src="http://placehold.it/180x180?text=Logo" alt="">
+				<img src="http://placehold.it/180x180?text=Logo3" alt="">
 			</div>
 			<div class="item">
-				<img src="http://placehold.it/180x180?text=Logo" alt="">
+				<img src="http://placehold.it/180x180?text=Logo4" alt="">
 			</div>
 			<div class="item">
-				<img src="http://placehold.it/180x180?text=Logo" alt="">
+				<img src="http://placehold.it/180x180?text=Logo5" alt="">
 			</div>
 			<div class="item">
-				<img src="http://placehold.it/180x180?text=Logo" alt="">
+				<img src="http://placehold.it/180x180?text=Logo6" alt="">
 			</div>
 			<div class="item">
-				<img src="http://placehold.it/180x180?text=Logo" alt="">
+				<img src="http://placehold.it/180x180?text=Logo7" alt="">
 			</div>
 			<div class="item">
 				<img src="http://placehold.it/180x180?text=Logo8" alt="">
 			</div>
-		<div>
+		</div>
 	</section>
 	<div class="cleaner"></div>
 	<section id="contacto" class="container">
@@ -196,76 +198,8 @@
 
 		<!-- Owl Librarie -->
 	<script src="owl-carousel/owl.carousel.min.js"></script>
+		<!-- Custom Scripts -->
+	<script src="scripts/my-scripts.js"></script>
 
-			<!-- Menu Desplegable -->
-	<script>
-		$(document).ready(function($) {
-		    $(".hamburger").click(function() {
-
-				$(".menu-desplegable").css("visibility", "visible");
-				$(".menu-desplegable").slideToggle(500);
-		    });
-		});
-	</script>
-			<!-- Carrousel Main-->
-	<script>
-
-		$(document).ready(function() {
-
-		  $("#owl-demo").owlCarousel({
-
-		      navigation : false, // Show next and prev buttons
-		      slideSpeed : 1,
-		      paginationSpeed : 400,
-		      singleItem:true,
-		      autoPlay: 3000,
-
-		      // "singleItem:true" is a shortcut for:
-		      // items : 1,
-		      // itemsDesktop : false,
-		      // itemsDesktopSmall : false,
-		      // itemsTablet: false,
-		      // itemsMobile : false
-
-		  });
-
-		});
-
-	</script>
-
-			<!-- Carrousel Clientes -->
-	<script>
-	$(document).ready(function() {
-
-		  $("#owl-demo2").owlCarousel({
-
-		      autoPlay: 3000, //Set AutoPlay to 3 seconds
-
-		      items : 4,
-		      itemsDesktop : [1199,3],
-		      itemsDesktopSmall : [979,3]
-
-		  });
-
-		});
-	</script>
-
-		<!-- Smooth Transition -->
-	<script>
-		$(function() {
-		 $('a[href*="#"]:not([href="#"])').click(function() {
-		   if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-		     var target = $(this.hash);
-		     target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-		     if (target.length) {
-		       $('html, body').animate({
-		         scrollTop: target.offset().top
-		       }, 1000);
-		       return false;
-		     }
-		   }
-		 });
-		});
-	</script>
 </body>
 </html>

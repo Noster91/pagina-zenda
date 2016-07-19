@@ -110,7 +110,7 @@ p {
 }
 
 /*class for the Menu script */
-.hamburger{
+.hamburger {
      visibility: hidden;
      background:none;
      position:fixed;
@@ -126,8 +126,21 @@ p {
      outline:none;
      z-index:10000000000000;
 }
-.menu-desplegable {
-
+.call-only {
+     visibility: hidden;
+     background:none;
+     position:fixed;
+     top:0;
+     right:40px;
+     line-height:100px;
+     padding:0px 15px 0px 15px;
+     color:#000;
+     border:0;
+     font-size:1.4em;
+     font-weight:bold;
+     cursor:pointer;
+     outline:none;
+     z-index:9;
 }
 
 
@@ -268,14 +281,19 @@ p {
 	margin: 10px 0;
 	padding: 5px;
 	background: #21a06c;
+	border: none;
+	border-radius: 6px;
 }
 
 #contacto button {
-	background-color: #979393;
-	border-radius: 6px;
+	color: #e8e7e7;
+	transition: 300ms 100ms ease-in;
+	text-transform: uppercase;
+	cursor: pointer;
+
 }
 #contacto button:hover {
-	background-color: #E0D9D9;
+	background-color: #0e4d33;
 }
 
 #contacto i {
@@ -325,10 +343,12 @@ p {
 	.hamburger {
 			visibility: visible;
 		}
-
+	.call-only {
+		visibility: visible;
+	}
 }
 
-@media (max-width: 640px) {
+@media (max-width: 700px) {
 
      footer {
           text-align: center;
