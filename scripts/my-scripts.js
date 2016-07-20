@@ -6,6 +6,7 @@ $(document).ready(function($) {
 		$(".menu-desplegable").css("visibility", "visible");
 		$(".menu-desplegable").slideToggle(500);
 	});
+
 });
 
 // Carrousel Main-->
@@ -20,7 +21,7 @@ $(document).ready(function() {
 		slideSpeed : 1,
 		paginationSpeed : 400,
 		autoPlay: 3000,
-		
+
 
 		 // "singleItem:true" is a shortcut for:
 		 // items : 1,
@@ -66,3 +67,23 @@ $(function() {
 		}
 	});
 });
+
+
+// On CLick close Menu (Only in Small size)
+
+
+	$(document).ready(function() {
+		var w = $(window).width();
+		console.log(w);
+		$(window).resize(function(){
+			w = $(window).width();
+			console.log(w);
+		});
+
+		if ( w < 700) {
+			$(".close").click(function() {
+				$(".menu-desplegable").slideToggle(500);
+				console.log(w);
+			});
+		}
+	});
