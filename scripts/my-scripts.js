@@ -87,3 +87,25 @@ $(function() {
 			});
 		}
 	});
+
+
+// Ajax para que el send-mail.php se ejecute en la web
+
+$(function () {
+
+  $('form').on('submit', function (e) {
+
+    e.preventDefault();
+
+    $.ajax({
+	 type: 'post',
+	 url: 'send-mail.php',
+	 data: $('form').serialize(),
+	 success: function () {
+	   alert('El formulario fue enviado');
+	 }
+    });
+
+  });
+
+});

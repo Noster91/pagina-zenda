@@ -60,7 +60,7 @@ p {
 	top:0;
 	left:0;
 	width: 100%;
-	z-index: 1;
+	z-index: 999;
 
 }
 
@@ -288,7 +288,7 @@ hr.style-two {
 	font-weight: bold;
 }
 
-#contacto input, #contacto textarea, #contacto button {
+#contacto input, #contacto textarea {
 	margin: 10px 0;
 	padding: 5px;
 	background: #21a06c;
@@ -297,14 +297,14 @@ hr.style-two {
 	color: #FFFFFF;
 }
 
-#contacto button {
+#contacto .button input {
 	color: #ffffff;
 	transition: 300ms 100ms ease-in;
 	text-transform: uppercase;
 	cursor: pointer;
 
 }
-#contacto button:hover {
+#contacto .button input:hover {
 	background-color: #0e4d33;
 }
 
@@ -372,15 +372,12 @@ hr.style-two {
 
 @media (max-width: 850px) {
 
-     .menu-desplegable {
-          display: none ;
 
-     }
      #menu nav {
           padding: 0;
      }
      #menu ul {
-          padding-right: 20px;
+          padding-left: 40px;
 
      }
      #menu li {
@@ -390,12 +387,7 @@ hr.style-two {
           margin: 0;
           padding: 0;
      }
-	.hamburger {
-		visibility: visible;
-		}
-	.call-only {
-		visibility: visible;
-	}
+
 }
 
 @media (max-width: 700px) {
@@ -404,10 +396,11 @@ hr.style-two {
           text-align: center;
      }
      .menu-desplegable {
+		display: none;
           padding-top:80px;
      }
      #menu ul {
-          padding-right: 0;
+          padding-left: 0;
           left: 0;
           margin: 0;
 
@@ -416,5 +409,11 @@ hr.style-two {
           height: 40px;
           line-height: 40px;
      }
+	.hamburger {
+		visibility: visible;
+		}
+	.call-only {
+		visibility: visible;
+	}
 
 }
