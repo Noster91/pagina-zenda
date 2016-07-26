@@ -41,6 +41,7 @@ p {
 }
 
 
+
 /*** IDs ***/
 #logo {
 	position: absolute;
@@ -322,6 +323,10 @@ hr.style-two {
 .contacto-info p {
 	line-height: 32px;
 	text-transform: uppercase;
+}
+
+.mapa{
+	width:100%;
 }
 
 /** Estas lineas dan color al placeholder en todos los navegadores **/
