@@ -74,16 +74,13 @@ $(function() {
 
 	$(document).ready(function() {
 		var w = $(window).width();
-		console.log(w);
 		$(window).resize(function(){
 			w = $(window).width();
-			console.log(w);
 		});
 
 		if ( w < 700) {
 			$(".close").click(function() {
 				$(".menu-desplegable").slideToggle(500);
-				console.log(w);
 			});
 		}
 	});
@@ -107,5 +104,36 @@ $(function () {
     });
 
   });
+
+});
+
+// Time Setter for Click to call
+
+/*function showPhone(){
+	var startTime = "08:00"
+	var endTime = "20:00"
+	var d = new Date();
+	console.log(d);
+	var time = d.getHours() + ":" + d.getMinutes();
+	console.log(time);
+	if (time > startTime && time < endTime) {
+		console.log("Mostrar Phone");
+	}
+	else {
+		console.log("No mostrar Phone");
+	}
+
+}
+showPhone();*/
+
+$(document).ready(function(){
+	var startTime = "08:00";
+	var endTime = "20:32";
+	var d = new Date();
+	var time = d.getHours() + ":" + d.getMinutes();
+	console.log(time);
+	if (time < startTime || time > endTime) {
+		$('.call-only').css("visibility", "hidden");
+	};
 
 });

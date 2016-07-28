@@ -15,4 +15,18 @@
      'X-Mailer: PHP/' . phpversion();
 
      mail($to, $subject, $body, $headers);
+
+
+$user_name = "zenda_zenda-user";
+$password = "zenda1986";
+$database = "zenda_dataDB";
+$server = "10.0.10.19";
+
+mysql_connect("$server","$user_name","$password");
+
+mysql_select_db("$database");
+
+$order = mysql_query("INSERT INTO Contactos (name, email, phone) VALUES ('$name', '$email','$phone')");
+
+mysql_query($order);
 ?>
