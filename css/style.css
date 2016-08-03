@@ -35,6 +35,8 @@ figure{
 	padding:0;
 	height:60px;
 }
+
+
 p {
 	font-family: 'Roboto Condensed', sans-serif;
 
@@ -76,9 +78,7 @@ hr.style-two {
 /******************************/
 /********  NAV  ***********/
 #menu {
-	background-color: #fff;
 	height: 100px;
-	box-shadow: 0 4px 2px -2px gray;
 }
 
 #menu nav {
@@ -90,29 +90,29 @@ hr.style-two {
 
 #menu ul {
 
-     text-align: right;
-     margin-left: 190px;
+		 float:right;
 }
 
 #menu li {
 	text-align: center;
      display: inline-block;
      height: 100px;
-     width: 100px;
-
+     width: 150px;
+		 border:none !important;
 }
 #menu a {
 	text-decoration: none;
 	text-transform: uppercase;
-	color: #000;
-     font-size: 12px;
+	color:rgb(231, 232, 231);
+     font-size: 16px;
 	font-weight: bold;
 	display: block;
 	transition: all 0.3s ease;
+
 }
 
 #menu a:hover {
-	background: lightgrey;
+	background: rgba(0, 182, 29, 0.74);
 
 }
 
@@ -160,21 +160,25 @@ hr.style-two {
 /******************************/
 /********  CARROUSEL  ********/
 #carrousel {
-	padding-top: 100px;
+	padding:0 !important;
+	margin: 0 !important;
 
 }
 
 
 /*class for the carrousel script */
+
+
 #owl-demo .item img{
     display: block;
     width: 100%;
     height: auto;
+
 }
 /******************************/
 /********  SERVICIOS  ********/
 #servicios {
-	padding-top: 100px;
+	padding-top: 90px;
 }
 
 #servicios h2 {
@@ -186,30 +190,44 @@ hr.style-two {
 	float:left;
 	text-align:left;
 	padding-left:20px;
+	font-size:20px;
+	margin-top:10px;
+	margin-bottom:0;
 }
 #servicios li {
 	margin:0;
-	height: 250px;
+	height: 220px;
 	padding: 15px;
 }
 
 #servicios li i {
 	color:white !important;
-	width: 50px;
-	height:50px;
-	line-height:50px;
+	width: 40px;
+	height:40px;
+	line-height:40px;
 	background-color: #686868;
 	border-radius:50%;
-	font-size:25px;
+	font-size:20px;
 	float:left;
 	text-align:center;
+}
+
+#servicios li p{
+	width:100%;
+	line-height:25px;
+	display:inline-block;
+
+}
+
+#titulo-largo{
+	margin-top:0 !important;
 }
 /******************************/
 /********  EQUIPO  ***********/
 
 #equipo {
 
-	padding-top: 100px;
+	padding-top: 90px;
 }
 
 #equipo h2{
@@ -227,6 +245,7 @@ hr.style-two {
 	padding: 15px;
 	text-align: center;
 }
+
 
 
 #equipo h3 {
@@ -284,37 +303,53 @@ hr.style-two {
 	padding-top: 100px;
 }
 
+#contacto h6{
+
+}
 #contacto p {
 	text-align: center;
 	font-weight: bold;
 }
 
-#contacto input, #contacto textarea {
-	margin: 10px 0;
+#contacto h6{
+	margin-bottom:15px;
+	text-align:left;
+	margin-right:52px;
+	color:rgba(33, 160, 108, 1);
+	font-size:15px;
+	margin-top:20px;
+}
+#contacto input {
 	padding: 5px;
-	background: #21a06c;
-	border: none;
-	border-radius: 6px;
+	background: #FFFFFF ;
+	border:solid 0.5px #acb3b5;
 	color: #FFFFFF;
+	font-size:15px;
 }
 
-#contacto .button input {
+#contacto textarea {
+	width:86%;
+	height:110px;
+	font-size:15px;
+}
+
+#contacto .button {
 	color: #ffffff;
 	transition: 300ms 100ms ease-in;
 	text-transform: uppercase;
 	cursor: pointer;
-
+	background-color: rgba(33, 160, 108, 1) !important;
+	margin-top:30px;
 }
 #contacto .button input:hover {
-	background-color: #0e4d33;
+	background-color: #0e4d33 !important;
 }
 
 #contacto i {
 	border-radius: 50%;
-	background-color: #FFFFFF;
+	background-color: #fff;
 	width: 50px;
 	height: 50px;
-	text-align: center;
 	padding: 11px;
 }
 #contacto .fa {
@@ -325,22 +360,23 @@ hr.style-two {
 	text-transform: uppercase;
 }
 
+
 .mapa{
 	width:100%;
 }
 
 /** Estas lineas dan color al placeholder en todos los navegadores **/
 ::-webkit-input-placeholder {
-   color: #ffffff;
+   color: #909293;
 }
 :-moz-placeholder { /* Firefox 18- */
-   color: #ffffff;
+   color: #909293;
 }
 ::-moz-placeholder {  /* Firefox 19+ */
-   color: #ffffff;
+   color: #909293;
 }
 :-ms-input-placeholder {
-   color: #ffffff;
+   color: #909293;
 }
 
 
@@ -375,6 +411,7 @@ hr.style-two {
 }
 
 
+
 @media (max-width: 850px) {
 
 
@@ -393,9 +430,11 @@ hr.style-two {
           padding: 0;
      }
 
+
+
 }
 
-@media (max-width: 700px) {
+@media (max-width: 975px) {
 
      footer {
           text-align: center;
@@ -403,6 +442,7 @@ hr.style-two {
      .menu-desplegable {
 		display: none;
           padding-top:80px;
+					width:100%;
      }
      #menu ul {
           padding-left: 0;
@@ -421,4 +461,31 @@ hr.style-two {
 		visibility: visible;
 	}
 
+
+	#menu a {
+		text-decoration: none;
+		text-transform: uppercase;
+		color:#000000;
+	     font-size: 16px;
+		font-weight: bold;
+		display: block;
+		transition: all 0.3s ease;
+		width:100%;
+
+	}
+
+	#menu a:hover {
+		background: rgba(0, 182, 29, 0.74);
+
+	}
+
+
+}
+
+@media (max-width: 550px) {
+#servicios li {
+	margin:0;
+	height: 175px;
+	padding: 15px;
+}
 }

@@ -9,6 +9,22 @@ $(document).ready(function($) {
 
 });
 
+
+// Menu transparente Scroll -->
+$(document).ready(function(){
+    $(window).scroll(function(){
+        if($(window).scrollTop() > 500){
+            $("#menu").css({"background-color":"white"})
+						$(".titnav").css({"color":"rgb(0, 0, 0)"});
+        }
+        else{
+            $("#menu").css({"background-color":"transparent"})
+						$(".titnav").css({"color":"#f0f0f0"});
+        }
+
+    })
+})
+
 // Carrousel Main-->
 
 
@@ -20,7 +36,7 @@ $(document).ready(function() {
 		navigation : false, // Show next and prev buttons
 		slideSpeed : 1,
 		paginationSpeed : 400,
-		autoPlay: 3000,
+		autoPlay: 5000,
 
 
 		 // "singleItem:true" is a shortcut for:
@@ -78,7 +94,7 @@ $(function() {
 			w = $(window).width();
 		});
 
-		if ( w < 700) {
+		if ( w < 975) {
 			$(".close").click(function() {
 				$(".menu-desplegable").slideToggle(500);
 			});
