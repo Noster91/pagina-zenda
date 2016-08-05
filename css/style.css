@@ -7,7 +7,7 @@
 /* selector universal */
 *{
 	box-sizing: border-box;
-	font-family:Montserrat;
+	font-family: Montserrat;
 	color:#515151;
 	/* descuenta del width y height, lo sumado en padding y border */
 }
@@ -324,7 +324,7 @@ hr.style-two {
 	margin-top:20px;
 }
 #contacto article {
-	padding: 20px;
+	padding: 10px 20px;
 }
 
 #contacto input {
@@ -365,7 +365,10 @@ hr.style-two {
 }
 .contacto-info p {
 	line-height: 32px;
-	text-transform: uppercase;
+	text-transform: uppercase !important;
+}
+.contacto-info i {
+	margin-left: -50px;
 }
 
 
@@ -429,13 +432,17 @@ hr.style-two {
 		display: none;
 
      }
+	#menu nav {
+	     padding: 0 80px;
+
+	}
 	#menu i {
 		color: rgb(231, 232, 231);
 	}
 
      #menu li {
           line-height: 100px;
-		width: 125px;
+		width: 115px;
      }
 	.hamburger {
 		visibility: visible;
@@ -466,11 +473,16 @@ hr.style-two {
 
 @media (max-width: 850px) {
 	.menu-desplegable {
-		padding-top:60px;
+		margin-top:60px;
 		width:100%;
+		background: #ffffff;
 	}
 	#menu {
 		height: 60px;
+		background-color: #ffffff !important;
+	}
+	#menu i {
+		color: #000000;
 	}
 	#menu button{
 		height: 60px;
@@ -483,25 +495,33 @@ hr.style-two {
 	#menu nav {
           padding: 0;
 	}
-	#menu a {
+	#menu li a {
 		font-size: 16px !important;
+		color:#000000 !important;
 	}
      #menu li {
-
 		line-height: 40px;
 		height: 40px;
 		width: 80px;
           margin: 0;
           padding: 0;
      }
+	#menu button a:hover {
+		background: none;
+	}
 
+
+	#contacto input {
+		padding: 15px;
+	}
 
 /* Reduccion de Paddings */
 	#carrousel, #servicios, #equipo, #clientes, #contacto {
-		padding-top: 60px;
+		padding-top: 60px !important;
 	}
 
 }
+
 
 @media (max-width: 550px) {
 	#servicios li {
