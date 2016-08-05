@@ -11,6 +11,9 @@
 	color:#515151;
 	/* descuenta del width y height, lo sumado en padding y border */
 }
+body {
+	margin:0;
+}
 
 ul,ol {
     list-style:none; /*elimina la viñeta*/
@@ -153,9 +156,7 @@ hr.style-two {
 .call-only a {
 	font-size:1.4em !important;
 }
-.call-only a:hover {
-	background-color: #fff !important;
-}
+
 
 /******************************/
 /********  CARROUSEL  ********/
@@ -231,7 +232,7 @@ hr.style-two {
 }
 
 #equipo h2{
-	margin-bottom:80px;
+	margin-bottom:40px;
 }
 
 #equipo img {
@@ -285,11 +286,14 @@ hr.style-two {
 /*class for the carrousel script */
 #owl-demo2 .item{
   	margin: 3px;
+	height: 100%;
+
 }
-#owl-demo2 .item img{
-  	display: block;
+#owl-demo2 .item img {
+
+	display: block;
   	width: 100%;
-  	height: auto;
+  	height: 100% !important;
 }
 .owl-controls span {
 	background-color: #21a06c !important;
@@ -319,6 +323,10 @@ hr.style-two {
 	font-size:15px;
 	margin-top:20px;
 }
+#contacto article {
+	padding: 20px;
+}
+
 #contacto input {
 	padding: 5px;
 	background: #FFFFFF ;
@@ -412,28 +420,6 @@ hr.style-two {
 
 
 
-@media (max-width: 850px) {
-
-
-     #menu nav {
-          padding: 0;
-     }
-     #menu ul {
-          padding-left: 40px;
-
-     }
-     #menu li {
-          font-size: 9px;
-          background: #fff;
-          width: 80px;
-          margin: 0;
-          padding: 0;
-     }
-
-
-
-}
-
 @media (max-width: 975px) {
 
      footer {
@@ -441,18 +427,15 @@ hr.style-two {
      }
      .menu-desplegable {
 		display: none;
-          padding-top:80px;
-					width:100%;
-     }
-     #menu ul {
-          padding-left: 0;
-          left: 0;
-          margin: 0;
 
      }
+	#menu i {
+		color: rgb(231, 232, 231);
+	}
+
      #menu li {
-          height: 40px;
-          line-height: 40px;
+          line-height: 100px;
+		width: 125px;
      }
 	.hamburger {
 		visibility: visible;
@@ -465,8 +448,8 @@ hr.style-two {
 	#menu a {
 		text-decoration: none;
 		text-transform: uppercase;
-		color:#000000;
-	     font-size: 16px;
+		color: rgb(231, 232, 231);
+	     font-size: 12px;
 		font-weight: bold;
 		display: block;
 		transition: all 0.3s ease;
@@ -479,13 +462,52 @@ hr.style-two {
 
 	}
 
+}
+
+@media (max-width: 850px) {
+	.menu-desplegable {
+		padding-top:60px;
+		width:100%;
+	}
+	#menu {
+		height: 60px;
+	}
+	#menu button{
+		height: 60px;
+		line-height: 60px;
+	}
+	#logo img {
+		height: 60px;
+		margin:0;
+	}
+	#menu nav {
+          padding: 0;
+	}
+	#menu a {
+		font-size: 16px !important;
+	}
+     #menu li {
+
+		line-height: 40px;
+		height: 40px;
+		width: 80px;
+          margin: 0;
+          padding: 0;
+     }
+
+
+/* Reduccion de Paddings */
+	#carrousel, #servicios, #equipo, #clientes, #contacto {
+		padding-top: 60px;
+	}
 
 }
 
 @media (max-width: 550px) {
-#servicios li {
-	margin:0;
-	height: 175px;
-	padding: 15px;
-}
+	#servicios li {
+		margin:0;
+		height: 175px;
+		padding: 15px;
+	}
+
 }

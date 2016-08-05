@@ -13,7 +13,7 @@ $(document).ready(function($) {
 // Menu transparente Scroll -->
 $(document).ready(function(){
     $(window).scroll(function(){
-        if($(window).scrollTop() > 500){
+        if($(window).scrollTop() > 400){
             $("#menu").css({"background-color":"white"})
 						$(".titnav").css({"color":"rgb(0, 0, 0)"});
         }
@@ -144,7 +144,7 @@ showPhone();*/
 
 $(document).ready(function(){
 	var startTime = "08:00";
-	var endTime = "20:32";
+	var endTime = "20:00";
 	var d = new Date();
 	var time = d.getHours() + ":" + d.getMinutes();
 	console.log(time);
