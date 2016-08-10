@@ -472,6 +472,18 @@ hr.style-two {
 }
 
 @media (max-width: 850px) {
+
+	/*IMAGES BANNERS FOR MOBILE */
+	.banner-notes img {
+		content: url("../images/office-notes-web-mob.jpg");
+	}
+	.banner-table img {
+		content: url("../images/office-table-web-mob.jpg");
+	}
+	.banner-coffee img {
+		content: url("../images/people-coffee-web-mob.jpg");
+	}
+	/***************************/
 	.menu-desplegable {
 		margin-top:60px;
 		width:100%;
