@@ -13,13 +13,15 @@ $(document).ready(function($) {
 // Menu transparente Scroll -->
 $(document).ready(function(){
     $(window).scroll(function(){
+
+
         if($(window).scrollTop() > 400){
             $("#menu").css({"background-color":"white"})
 						$(".titnav").css({"color":"rgb(0, 0, 0)"});
         }
-        else{
+        else if ($(window).width() > 850){
             $("#menu").css({"background-color":"transparent"})
-						$(".titnav").css({"color":"#f0f0f0"});
+						$(".titnav").css({"color":"rgb(231, 232, 231)"});
         }
 
     })
