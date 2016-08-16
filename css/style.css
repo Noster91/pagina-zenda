@@ -471,15 +471,21 @@ hr.style-two {
 @media (max-width: 850px) {
 
 	/*IMAGES BANNERS FOR MOBILE */
-	.banner-notes img {
-		content: url("../images/office-notes-web-mob.jpg");
+	.banner-working img {
+		content: url("../images/banners/b-working-mob.jpg");
 	}
+
 	.banner-table img {
-		content: url("../images/office-table-web-mob.jpg");
+		content: url("../images/banners/b-table-mob.jpg");
 	}
-	.banner-coffee img {
-		content: url("../images/people-coffee-web-mob.jpg");
+
+	.banner-ipad img {
+		content: url("../images/banners/b-ipad-mob.jpg");
 	}
+	.banner-laptop img {
+		content: url("../images/banners/b-laptop-mob.jpg");
+	}
+
 	/***************************/
 	.menu-desplegable {
 		margin-top:60px;
