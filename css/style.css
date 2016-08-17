@@ -161,8 +161,41 @@ hr.style-two {
 	padding:0 !important;
 	margin: 0 !important;
 
+
+
 }
 
+/*Texto sobre el carrousel*/
+.carrousel-texto {
+	width: 900px;
+	height: 350px;
+	position: absolute;
+	top:50%;
+	left: 50%;
+	margin-top: -175px;
+	margin-left: -450px;
+	right: auto;
+	text-align: center;
+	text-transform: uppercase;
+	text-shadow: 0 0 2px rgba(0, 0, 0, 0.57);
+}
+.carrousel-texto p {
+	font-size: 60px;
+	color: #ffffff;
+}
+.boton-carrousel {
+	margin-top: 30px ;
+	text-decoration: none;
+	border: 1px solid #ffffff;
+	padding: 10px 15px;
+	color: #ffffff ;
+	font-size: 28px;
+	display: inline-block;
+}
+.boton-carrousel:hover {
+	background-color: rgba(217, 215, 215, 0.39);
+
+}
 
 /*class for the carrousel script */
 
@@ -418,7 +451,14 @@ hr.style-two {
 	margin-right: 6px;
 }
 
-
+@media (max-width: 1200px) {
+	.carrousel-texto p {
+		font-size: 50px;
+	}
+	.boton-carrousel {
+		font-size: 22px;
+	}
+}
 
 @media (max-width: 975px) {
 
@@ -524,7 +564,9 @@ hr.style-two {
 	#menu button a:hover {
 		background: none;
 	}
-
+	.carrousel-texto {
+		visibility: hidden;
+	}
 
 	#contacto input {
 		padding: 15px;
