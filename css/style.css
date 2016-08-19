@@ -262,7 +262,7 @@ hr.style-two {
 }
 
 #equipo h2{
-	margin-bottom:40px;
+	margin-bottom:10px;
 }
 
 #equipo img {
@@ -304,7 +304,12 @@ hr.style-two {
 
 }
 
-
+#slogan {
+  text-align:center;
+  margin-top:10px;
+  font-size:30px;
+  line-height:35px;
+}
 /******************************/
 /********  CLIENTES  *********/
 
@@ -584,7 +589,10 @@ hr.style-two {
 	#servicios li {
 		margin:0;
 		height: 175px;
-		padding: 15px;
+		padding: 25px;
 	}
-
+  #slogan {
+    font-size:20px;
+    line-height:20px;
+  }
 }
