@@ -209,11 +209,11 @@ hr.style-two {
 /******************************/
 /********  SERVICIOS  ********/
 #servicios {
-	padding-top: 90px;
+	padding-top: 75px;
 }
 
 #servicios h2 {
-	margin-bottom: 40px;
+	margin-bottom: 10px;
 
 }
 #servicios h3 {
@@ -227,7 +227,7 @@ hr.style-two {
 }
 #servicios li {
 	margin:0;
-	height: 220px;
+	height: 180px;
 	padding: 15px;
 }
 
@@ -258,7 +258,7 @@ hr.style-two {
 
 #equipo {
 
-	padding-top: 90px;
+	padding-top: 75px;
 }
 
 #equipo h2{
@@ -307,14 +307,14 @@ hr.style-two {
 #slogan {
   text-align:center;
   margin-top:10px;
-  font-size:30px;
-  line-height:35px;
+  font-size:27px;
+  line-height:40px;
 }
 /******************************/
 /********  CLIENTES  *********/
 
 #clientes {
-	padding-top: 100px;
+	padding-top: 75px;
 }
 
 
@@ -339,7 +339,7 @@ hr.style-two {
 
 #contacto {
 
-	padding-top: 100px;
+	padding-top: 75px;
 }
 
 #contacto h6{
@@ -460,9 +460,9 @@ hr.style-two {
 	.carrousel-texto p {
 		font-size: 50px;
 	}
-	.boton-carrousel {
+	/*.boton-carrousel {
 		font-size: 22px;
-	}
+	}*/
 }
 
 @media (max-width: 975px) {
@@ -509,6 +509,21 @@ hr.style-two {
 	#menu a:hover {
 		background: rgba(0, 182, 29, 0.74);
 
+	}
+
+
+	.carrousel-texto {
+
+		margin-top: -175px;
+		margin-left: -430px;
+	}
+	.carrousel-texto p {
+		font-size: 40px;
+	}
+
+	#slogan {
+	  font-size:20px;
+	  line-height:30px;
 	}
 
 }
@@ -569,8 +584,10 @@ hr.style-two {
 	#menu button a:hover {
 		background: none;
 	}
-	.carrousel-texto {
-		visibility: hidden;
+
+	#slogan {
+		font-size:20px;
+		line-height:20px;
 	}
 
 	#contacto input {
@@ -582,17 +599,87 @@ hr.style-two {
 		padding-top: 60px !important;
 	}
 
+	.carrousel-texto {
+
+		margin-top: -175px;
+		margin-left: -350px;
+	}
+
+	#slogan {
+		font-size:17px;
+		line-height:30px;
+	}
+
+
+
 }
 
 
-@media (max-width: 550px) {
+@media (max-width: 650px) {
 	#servicios li {
 		margin:0;
 		height: 175px;
 		padding: 25px;
 	}
   #slogan {
-    font-size:20px;
+    font-size:14px;
     line-height:20px;
   }
+
+	.carrousel-texto {
+
+		margin-top: -175px;
+		margin-left: -300px;
+	}
+	.carrousel-texto p {
+		font-size: 32px !important;
+	}
+	.boton-carrousel {
+		text-decoration: none;
+		padding: 5px 10px;
+		font-size: 20px;
+		display: inline-block;
+	}
+
 }
+
+@media (max-width: 550px) {
+
+	.carrousel-texto {
+
+		margin-top: -175px;
+		margin-left: -240px;
+	}
+	.carrousel-texto p {
+		font-size: 30px !important;
+	}
+	.boton-carrousel {
+		margin-top:10px;
+		text-decoration: none;
+		padding: 5px 10px;
+		font-size: 15px;
+		display: inline-block;
+	}
+
+	#slogan {
+		font-size:14px;
+		line-height:20px;
+	}
+
+	@media (max-width: 475px) {
+
+		.carrousel-texto {
+
+			margin-top: -175px;
+			margin-left: -200px;
+		}
+		.carrousel-texto p {
+			font-size: 25px !important;
+		}
+		.boton-carrousel {
+			margin-top:10px;
+			text-decoration: none;
+			padding: 5px 10px;
+			font-size: 15px;
+			display: inline-block;
+		}
