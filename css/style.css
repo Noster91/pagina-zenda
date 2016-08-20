@@ -610,8 +610,6 @@ hr.style-two {
 		line-height:30px;
 	}
 
-
-
 }
 
 
@@ -632,7 +630,7 @@ hr.style-two {
 		margin-left: -300px;
 	}
 	.carrousel-texto p {
-		font-size: 32px !important;
+		font-size: 30px !important;
 	}
 	.boton-carrousel {
 		text-decoration: none;
@@ -651,7 +649,7 @@ hr.style-two {
 		margin-left: -240px;
 	}
 	.carrousel-texto p {
-		font-size: 30px !important;
+		font-size: 25px !important;
 	}
 	.boton-carrousel {
 		margin-top:10px;
@@ -671,10 +669,10 @@ hr.style-two {
 		.carrousel-texto {
 
 			margin-top: -175px;
-			margin-left: -200px;
+			margin-left: -185px;
 		}
 		.carrousel-texto p {
-			font-size: 25px !important;
+			font-size: 20px !important;
 		}
 		.boton-carrousel {
 			margin-top:10px;
@@ -683,3 +681,8 @@ hr.style-two {
 			font-size: 15px;
 			display: inline-block;
 		}
+		#slogan {
+			font-size:14px;
+			line-height:25px;
+		}
+	}
