@@ -40,9 +40,9 @@ figure{
 }
 
 
-p {
+p, h1 {
 	font-family: 'Roboto Condensed', sans-serif;
-
+	font-weight: normal;;
 }
 
 
@@ -160,26 +160,27 @@ hr.style-two {
 #carrousel {
 	padding:0 !important;
 	margin: 0 !important;
-
+	position: relative;;
 
 
 }
 
 /*Texto sobre el carrousel*/
 .carrousel-texto {
-	max-width: 900px;
+	max-width: 1200px;
 	height: 350px;
 	position: absolute;
 	top:50%;
 	left: 50%;
 	margin-top: -175px;
-	margin-left: -450px;
+	margin-left: -50%;
 	right: auto;
 	text-align: center;
 	text-transform: uppercase;
 	text-shadow: 0 0 2px rgba(0, 0, 0, 0.57);
+	padding: 0 15px;
 }
-.carrousel-texto p {
+.carrousel-texto h1 {
 	font-size: 60px;
 	color: #ffffff;
 }
@@ -400,6 +401,7 @@ hr.style-two {
 }
 .contacto-info p {
 	line-height: 32px;
+	font-size:22px;
 	text-transform: uppercase !important;
 }
 .contacto-info i {
@@ -457,7 +459,7 @@ hr.style-two {
 }
 
 @media (max-width: 1200px) {
-	.carrousel-texto p {
+	.carrousel-texto h1 {
 		font-size: 50px;
 	}
 	/*.boton-carrousel {
@@ -515,9 +517,9 @@ hr.style-two {
 	.carrousel-texto {
 
 		margin-top: -175px;
-		margin-left: -430px;
+		margin-left: -50%;
 	}
-	.carrousel-texto p {
+	.carrousel-texto h1 {
 		font-size: 40px;
 	}
 
@@ -601,10 +603,12 @@ hr.style-two {
 
 	.carrousel-texto {
 
-		margin-top: -175px;
-		margin-left: -350px;
-	}
+		margin-top: -60px;
 
+	}
+	.boton-carrousel {
+		visibility: hidden;
+	}
 	#slogan {
 		font-size:17px;
 		line-height:30px;
@@ -615,48 +619,28 @@ hr.style-two {
 
 @media (max-width: 650px) {
 	#servicios li {
-		margin:0;
-		height: 175px;
-		padding: 25px;
+			margin:0;
+			height: 175px;
+			padding: 25px;
 	}
-  #slogan {
-    font-size:14px;
-    line-height:20px;
-  }
-
-	.carrousel-texto {
-
-		margin-top: -175px;
-		margin-left: -300px;
+	#slogan {
+	    font-size:14px;
+	    line-height:20px;
 	}
-	.carrousel-texto p {
+
+	.carrousel-texto h1 {
 		font-size: 30px !important;
-	}
-	.boton-carrousel {
-		text-decoration: none;
-		padding: 5px 10px;
-		font-size: 20px;
-		display: inline-block;
 	}
 
 }
 
 @media (max-width: 550px) {
 
-	.carrousel-texto {
-
-		margin-top: -175px;
-		margin-left: -240px;
-	}
-	.carrousel-texto p {
+	.carrousel-texto h1 {
 		font-size: 25px !important;
 	}
 	.boton-carrousel {
-		margin-top:10px;
-		text-decoration: none;
-		padding: 5px 10px;
-		font-size: 15px;
-		display: inline-block;
+   		visibility: hidden;
 	}
 
 	#slogan {
@@ -667,19 +651,13 @@ hr.style-two {
 	@media (max-width: 475px) {
 
 		.carrousel-texto {
-
-			margin-top: -175px;
-			margin-left: -185px;
+			margin-top: -60px;
 		}
-		.carrousel-texto p {
+		.carrousel-texto h1 {
 			font-size: 20px !important;
 		}
 		.boton-carrousel {
-			margin-top:10px;
-			text-decoration: none;
-			padding: 5px 10px;
-			font-size: 15px;
-			display: inline-block;
+			visibility: hidden;
 		}
 		#slogan {
 			font-size:14px;
