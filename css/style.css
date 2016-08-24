@@ -180,11 +180,12 @@ hr.style-two {
 	text-transform: uppercase;
 	text-shadow: 0 0 2px rgba(0, 0, 0, 0.57);
 	padding: 0 15px;
-	pointer-events: none;
+
 }
 .carrousel-texto h1 {
 	font-size: 60px;
 	color: #ffffff;
+
 }
 .boton-carrousel {
 	margin-top: 30px ;
@@ -194,6 +195,7 @@ hr.style-two {
 	color: #ffffff ;
 	font-size: 28px;
 	display: inline-block;
+	pointer-events: auto;
 }
 .boton-carrousel:hover {
 	background-color: rgba(217, 215, 215, 0.39);
