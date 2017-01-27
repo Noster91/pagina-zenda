@@ -462,6 +462,18 @@ hr.style-two {
 	margin-right: 6px;
 }
 
+.redes a{
+	font-size: 28px;
+}
+
+.fb i:hover {
+	color: #3b5998 !important;
+}
+
+.ln i:hover {
+	color: #0077b5 !important;
+}
+
 @media (max-width: 1200px) {
 	.carrousel-texto h1 {
 		font-size: 50px;
